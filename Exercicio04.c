@@ -2,13 +2,14 @@
 #include <stdlib.h>
 
 int maior(int*vetor, int tam){
-    int i, maior;
-    maior = 0;
+    int i, *maior;
+    maior = malloc(sizeof(int));
+    *maior = *vetor;
     for(i=0;i<tam;i++){
-        if(vetor[i] > maior)
-            maior = vetor[i];
+        if(*(vetor + i) > *maior)
+            *maior = *(vetor + i);
     }
-    return maior;
+    return *maior;
 }
 
 
@@ -27,6 +28,6 @@ int main(){
         printf("%d \n", *(p+i));
     }
 
-    printf("%d", maior(p, n));
+    printf("Maior: %d", maior(p, n));
     return 0;
 }
