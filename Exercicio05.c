@@ -6,7 +6,19 @@ struct Data{
     int dia;
     int mes;
     int ano;
-} *data1, *data2;
+} *data, *data1, *data2;
+
+int AlocaData(int d, int m, int a){
+    data = malloc(sizeof(struct Data));
+
+    data->dia = d;
+    data->mes = m;
+    data->ano = a;
+
+    return data;
+
+}
+
 
 int diferencaDias(struct Data*data1, struct Data*data2){
     int total1 = data1->dia = data1->dia + (data1->mes * 30) + (data1->ano * 365);
@@ -16,20 +28,10 @@ int diferencaDias(struct Data*data1, struct Data*data2){
 }
 
 int main(){
-   
 
-data1 = malloc(sizeof(struct Data));
-data2 = malloc(sizeof(struct Data));
+data1 = AlocaData(5, 5, 2025);
 
-data1->dia = 5;
-data1->mes = 2;
-data1->ano = 2025;
-
-
-data2->dia = 5;
-data2->mes = 2;
-data2->ano = 2026;
-
+data2 = AlocaData(5, 6, 2025);
 
 printf("%d", diferencaDias(data1, data2));
     return 0;
