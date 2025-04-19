@@ -136,5 +136,15 @@ void aplicarOperacao(void* dados[], int tam, FuncaoOperacao pfo){
 //---------------------------------------------------------------
 void identificarCoringa(struct CartaBaralho baralho[], int tam,
                         struct CartaBaralho vira, FuncaoCoringa pfm){
+      int i;
+      for(i=0;i<52;i++){
+         //printf("Verificando carta -> Valor: %d, Naipe: %c\n", baralho[i].valor, baralho[i].naipe);
+      if(pfm(baralho[i], vira) == 1){
+                           printf("\nCoringa Encontrado -> Valor %d, Naipe %c", baralho[i].valor, baralho[i].naipe);
+                           return; 
+                        }                 
+                        } 
+      printf("nao encontrado o coringa");
+      
 
 }
