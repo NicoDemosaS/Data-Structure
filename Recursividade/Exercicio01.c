@@ -10,8 +10,10 @@ void main(){
             return soma(x+1, y-1);
         }
     }
-
+   
     printf("%d", soma(5, 5));
+
+
 
 
 
