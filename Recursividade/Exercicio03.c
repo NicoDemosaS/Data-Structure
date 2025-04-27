@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+/* Escreva uma fun c¸˜ao recursiva que retorne a quantidade
+de ocorr ˆencias do d´ıgito k em um dado n ´umero natural
+n.*/
 int ocorr(int k, int n){
     if(n == 0 && k != 0)
         return 0;

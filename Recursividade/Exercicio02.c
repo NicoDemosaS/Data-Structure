@@ -13,6 +13,8 @@ void main(){
             return a + mult(a, b - 1);
         }
     }
+    5, 2
+    
 
     printf("%d", mult(5, 2));
 
