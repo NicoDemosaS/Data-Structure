@@ -14,6 +14,6 @@
 
 #include "Operacoes/6_destruirLista.h"
 
-//#include "Operacoes/7_duplicarLista.h"
+#include "Operacoes/7_duplicarLista.h"
 
-//#include "Operacoes/8_dividirLista.h"
+#include "Operacoes/8_dividirLista.h"

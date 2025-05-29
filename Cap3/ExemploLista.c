@@ -22,15 +22,25 @@ int main(){
     int* nove = alocaInt(9);
     int* oito = alocaInt(8);
 
-    printf("\nResultado Exclusao\n");
+    //printf("\nResultado Exclusao\n");
     //excluirInfo(listaInt, nove, comparaInt);
-    imprimirLista(listaInt, imprimeInt);
+    //imprimirLista(listaInt, imprimeInt);
 
-    printf("\nResultado Conter Info\n");
-    printf("[%d]\n", contemInfo(listaInt, oito, comparaInt));
+    //printf("\nResultado Conter Info\n");
+    //printf("[%d]\n", contemInfo(listaInt, oito, comparaInt));
 
     //printf("Teste Destruir Lista");
     //destruirLista(listaInt);
     //imprimirLista(listaInt, imprimeInt);
+
+    printf("\nTeste Duplicacao Lista\n");
+    pDLista listaInt2 = duplicarLista(listaInt, alocaInfoInt);
+    imprimirLista(listaInt2, imprimeInt);
+
+    pDLista outralista = dividirLista(listaInt, 3);
+    printf("\nImprimindo outralista\n");
+    imprimirLista(outralista, imprimeInt);
+    printf("\nImprimindo listaint\n");
+    imprimirLista(listaInt, imprimeInt);
     return 0;
 }

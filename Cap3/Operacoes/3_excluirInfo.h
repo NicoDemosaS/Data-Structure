@@ -16,6 +16,7 @@ int excluirInfo(pDLista pd, void *info, FuncaoComparacao pfc){
                 anterior->prox = atual->prox;
             }
             free(atual);
+            pd->quantidade--;
             return 1;
         }
         anterior = atual;
