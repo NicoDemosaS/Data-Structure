@@ -1,5 +1,9 @@
 {
     "files.associations": {
-        "8_dividirlista.h": "c"
+        "8_dividirlista.h": "c",
+        "stdint.h": "c",
+        "tad_listalinear.h": "c",
+        "lista.h": "c",
+        "14_decompornumero.h": "c"
     }
 }

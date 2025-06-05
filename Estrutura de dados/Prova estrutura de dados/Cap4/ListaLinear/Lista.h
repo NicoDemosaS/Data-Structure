@@ -5,8 +5,10 @@
 #include "Operacoes/1_criarLista.h"
 
 #include "Operacoes/2_incluirInfo.h"
+#include "Operacoes/2.1_incluirInfoMeio.h"
 
 #include "Operacoes/3_excluirInfo.h"
+#include "Operacoes/3_1_excluirInfoPos.h"
 
 #include "Operacoes/4_contemInfo.h"
 
@@ -17,15 +19,3 @@
 #include "Operacoes/7_duplicarLista.h"
 
 #include "Operacoes/8_dividirLista.h"
-
-#include "Operacoes/9_unirLista.h"
-
-#include "Operacoes/10_IntersecaoLista.h"
-
-#include "Operacoes/11_disjuncaoListas.h"
-
-#include "Operacoes/12_contidaLista.h"
-
-#include "Operacoes/13_complementoLista.h"
-
-#include "Operacoes/14_decomporNumero.h"

@@ -5,7 +5,7 @@
 pDLista dividirLista(pDLista pListaOriginal, int pos)
 {
     pNoh atual = pListaOriginal->inicio;
-    pDLista novalista = malloc(sizeof(DLista));
+    pDLista novalista = criarLista();
     novalista->inicio = NULL;
     int i;
     for(i=0;i<pos - 1 && atual->prox != NULL; i++){

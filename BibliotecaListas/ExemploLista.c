@@ -84,7 +84,9 @@ int main(){
     printf("%d", disjuncaoListas(listaInt, listaInt3, comparaInt));
 
 
-
+    printf("\nTestando decomporNumero\n");
+    pDLista teste = decomporNumero(57222);
+    imprimirLista(teste, imprimeData);
 
     return 0;
 }

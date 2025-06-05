@@ -1,7 +1,7 @@
 #ifndef UTILS_H
 #define UTILS_H
 
-#include <stdint.h>
+#include <stdio.h>
 
 /* ---------------------------------------- */
 /* tipo de dado INT */
@@ -44,7 +44,7 @@ int          comparaData  (void *info1, void *info2){
             (p2->dia - p1->dia)  ;
 }
 /* ---------------------------------------- */
-void imprimeData  (void *info){
+void         imprimeData  (void *info){
    struct Data *pd = (struct Data *) info;
    printf("%d/%d/%d - ", pd->dia, pd->mes, pd->ano);
 }
@@ -65,24 +65,9 @@ struct Data* alocaData    (int dia, int mes, int ano){
    return pd;
 }
 
-void LiberaNoh(void *info){
-   free(((pNoh)info)->info); // libera o dado
-   free(info); 
+void liberarInfo(void *info) {
+  void *pi = info;
+  free(pi);
 }
-
-struct decomposto {
-    int coeficiente;
-    int base;
-    int expoente;
-};
-
-struct decomposto* decomposto(int coeficiente, int base, int expoente){
-   struct decomposto *pd = (struct decomposto *) malloc(sizeof(struct decomposto));
-   pd->coeficiente = coeficiente;
-   pd->base = base;
-   pd->expoente = expoente;
-   return pd;
-}
-
 
 #endif /* UTILS_H */
