@@ -13,6 +13,8 @@ void incluirInfoFim(pDLista pd, void *info){
           pd->fim->prox = novo;
 
       pd->fim = novo;
+
+      pd->quantidade++;
 }
 
 void incluirInfoMeio(pDLista pd, void *info, int posicao){
@@ -29,6 +31,8 @@ void incluirInfoMeio(pDLista pd, void *info, int posicao){
     anterior->prox = novo;
     novo->info = info;
     novo->prox = atual;
+
+    pd->quantidade++;
 }
 
 void incluirInfoInicio(pDLista pd, void *info){

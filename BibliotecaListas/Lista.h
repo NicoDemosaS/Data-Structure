@@ -17,3 +17,9 @@
 #include "Operacoes/7_duplicarLista.h"
 
 #include "Operacoes/8_dividirLista.h"
+
+#include "Operacoes/9_unirLista.h"
+
+#include "Operacoes/10_IntersecaoLista.h"
+
+#include "Operacoes/11_disjuncaoListas.h"

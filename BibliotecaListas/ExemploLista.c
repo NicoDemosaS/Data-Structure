@@ -17,6 +17,8 @@ int main(){
     incluirInfoFim(listaInt, nove);
     incluirInfoFim(listaInt, alocaInt(1));
     incluirInfoFim(listaInt, alocaInt(2));
+    incluirInfoFim(listaInt, alocaInt(12));
+    incluirInfoFim(listaInt, alocaInt(13));
 
     printf("\nResultado da inclusao \n");
     imprimirLista(listaInt, imprimeInt);
@@ -38,6 +40,14 @@ int main(){
     pDLista listaInt2 = duplicarLista(listaInt, alocaInfoInt);
     imprimirLista(listaInt2, imprimeInt);
 
+    pDLista listaInt3 = criarLista();
+
+    incluirInfoFim(listaInt3, alocaInt(12));
+
+    incluirInfoFim(listaInt3, alocaInt(15));
+
+    incluirInfoFim(listaInt3, alocaInt(19));
+
     //pDLista outralista = dividirLista(listaInt, 3);
     //printf("\nImprimindo outralista\n");
     //imprimirLista(outralista, imprimeInt);
@@ -52,11 +62,29 @@ int main(){
 
     
 
-    printf("\nTestando excluir total\n");
-    imprimirLista(listaInt, imprimeInt);
-    excluirInfoTotal(listaInt, nove, comparaInt, LiberaNoh);
-    printf("\n");
-    imprimirLista(listaInt, imprimeInt);
-    printf("\n[%d]", *nove);
+    //printf("\nTestando excluir total\n");
+    //imprimirLista(listaInt, imprimeInt);
+    //excluirInfoTotal(listaInt, nove, comparaInt, LiberaNoh);
+    //printf("\n");
+    //imprimirLista(listaInt, imprimeInt);
+    //printf("\n[%d]", *nove);
+
+
+    //UNIR listas
+    
+
+    //Intersecao
+    printf("\nIntersecao Nova lista \n");
+    pDLista novalista = intersecaoListas(listaInt, listaInt3, comparaInt);
+    imprimirLista(novalista, imprimeInt);
+
+
+    //Disjuncao
+    printf("\nDisjuncao \n");
+    printf("%d", disjuncaoListas(listaInt, listaInt3, comparaInt));
+
+
+
+
     return 0;
 }
