@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "tad_listalinear.h": "c",
+        "tad_arvore.h": "c"
+    }
+}

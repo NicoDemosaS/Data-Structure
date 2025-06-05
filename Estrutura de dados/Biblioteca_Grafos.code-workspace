@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "Lista EDD/Biblioteca_Arvore"
+		},
+		{
+			"path": "Lista EDD/grafos"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.embeddedhtml": "html",
+			"tad_listalinear.h": "c",
+			"tad_arvore.h": "c"
+		}
+	}
+}
